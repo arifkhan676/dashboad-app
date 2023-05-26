@@ -107,6 +107,7 @@ export default function Sidenav() {
                 >
                   <InboxIcon /> 
                 </ListItemIcon>
+
                 <ListItemText primary="Home" sx={{ opacity: open ? 1 : 0 }} />
               </ListItemButton>
             </ListItem>
@@ -129,6 +130,27 @@ export default function Sidenav() {
                   <InboxIcon /> 
                 </ListItemIcon>
                 <ListItemText primary="About" sx={{ opacity: open ? 1 : 0 }} />
+              </ListItemButton>
+            </ListItem>
+
+            <ListItem  disablePadding sx={{ display: 'block' }} onClick={()=>navigate("/analytics")} >
+              <ListItemButton
+                sx={{
+                  minHeight: 48,
+                  justifyContent: open ? 'initial' : 'center',
+                  px: 2.5,
+                }}
+              >
+                <ListItemIcon
+                  sx={{
+                    minWidth: 0,
+                    mr: open ? 3 : 'auto',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <InboxIcon /> 
+                </ListItemIcon>
+                <ListItemText primary="Analytics" sx={{ opacity: open ? 1 : 0 }} />
               </ListItemButton>
             </ListItem>
 

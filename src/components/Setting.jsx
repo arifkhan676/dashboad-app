@@ -10,7 +10,6 @@ const Setting = () => {
             <Box sx={{ display: 'flex' }}>
                 <Sidenav />
                 <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
-                    <h1>Setting add</h1>
                     
                 </Box>
             </Box>

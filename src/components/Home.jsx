@@ -6,13 +6,14 @@ import Appbar from '../Navbar/Appbar';
 import { Grid } from '@mui/material';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
 import Stack from '@mui/material/Stack';
 import './Bghome.css';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
 import LocalMallIcon from '@mui/icons-material/LocalMall';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import Accordin from './Accordin';
+import ChartBar from '../chart/Chart';
+import CountUp from 'react-countup';
 
 
 const Home = () => {
@@ -27,15 +28,15 @@ const Home = () => {
             <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
               <Grid item xs={8}>
                 <Stack direction="row" spacing={2}>
-                  <Card  sx={{ width: 100 + '%' ,backgroundColor:'#1d4f75' }} >
+                  <Card  sx={{ width: 100 + '%' ,color:'#D2E9E9', backgroundColor:'#1d4f75' }} >
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="div">
                         <Stack spacing={2}>
                           <CreditCardIcon />
-                          <h3> $500 </h3>
+                          <h3> $ <CountUp start={1} end={500} delay={0.2} /> </h3>
                         </Stack>
                       </Typography>
-                      <Typography variant="body2" color="text.secondary">
+                      <Typography variant="body2" color="text.white">
                         Total Earnings
                       </Typography>
                     </CardContent>
@@ -46,7 +47,7 @@ const Home = () => {
                       <Typography gutterBottom variant="h5" component="div">
                         <Stack spacing={2}>
                           <LocalMallIcon />
-                          <h3> $300 </h3>
+                          <h3> $ <CountUp start={1} end={300} delay={0.2} /> </h3>
                         </Stack>
                       </Typography>
                       <Typography variant="body2" color="text.secondary">
@@ -96,12 +97,7 @@ const Home = () => {
                 <Stack direction="row" spacing={2}>
                   <Card sx={{ width: 100 + '%', height: 60 + 'vh' }}>
                     <CardContent>
-                      <Typography gutterBottom variant="h5" component="div">
-
-                      </Typography>
-                      <Typography variant="body2" color="text.secondary">
-
-                      </Typography>
+                     <ChartBar /> 
                     </CardContent>
                   </Card>
                 </Stack>

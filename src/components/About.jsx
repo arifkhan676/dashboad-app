@@ -10,7 +10,7 @@ const About = () => {
             <Box sx={{ display: 'flex' }}>
                 <Sidenav />
                 <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
-                    <h1>About</h1>
+
                 </Box>
             </Box>
         </div>
