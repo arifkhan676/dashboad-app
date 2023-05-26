@@ -1,0 +1,21 @@
+.bgHome{
+    background-color: #ECF8F9;
+}
+.leftShop1{
+    display: flex;
+}
+.deatilsShop{
+    position: relative;
+    top: -20px;
+    left: 10px;
+}
+.iconStore{
+    padding: 15px;
+}
+.xy{
+    font-size:12px;
+    font-weight: 400;
+}
+.shop1{
+    background-color: #00d4ff
+}
